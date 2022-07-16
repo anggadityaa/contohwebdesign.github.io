@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header {
+    padding: 20px 35px;
+}
+.header a {
+    color: black;
+    font-size: 25px;
+    margin: 0;
+    display: flex;
+    text-decoration: none;
+}
+.header a:hover{
+    /* border-bottom: 2px solid red; */
+}
+h3.lastname{
+    color: red;
+}
+
+nav ul {
+    padding: 22px 35px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    margin: -10px;
+    text-decoration: none;
+    color: black;
+    padding: 31px 31px;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    padding: 31px;
+    color: red;
+    /* border-bottom: 3px solid; */
+    transition: 0.5s;
+}
+#keyframe mymove {
+    /* 50% {border-bottom: 15px solid lightblue;} */
+}
+
+.content {
+    padding: 150px;
+}
+h1.main {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+}
+p.lorem {
+    width: 410px;
+    padding-bottom: 20px;
+}
+button {
+    border: 0;
+    background-color: rgb(111, 158, 221);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+    width: 170px;
+    height: 50px;
+}
+
+.mobile-menu {
+    display: none;
+}
+.mobile-menu:hover{
+    cursor: pointer;
+}
+#check {
+        
+    display: none;
+}
+
+.sidebar {
+    float: right;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    width: 300px;
+    background-color: rgba(151, 33, 33, 0.8);
+}
+.sidebar ul li {
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+}
+.sidebar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.sidebar ul li:hover{
+    background-color: black;
+    transition: 0.5s;
+    transition-property: background-color;
+}
+.sidebar ul li a:hover{
+    color: red;
+}
+#check:checked ~ .sidebar{
+    right: 0;
+    transition: 0.5s;
+}
+
+/* responsive */
+
+/* ukuran hp */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+        padding: 20px 10px;
+    }
+    nav ul li {
+        display: none;
+    }
+    .content{
+        padding: 30px 50px;
+    }
+}
