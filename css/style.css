@@ -92,7 +92,6 @@ button {
 }
 
 .sidebar {
-    float: right;
     position: fixed;
     top: 0;
     left: -300px;
